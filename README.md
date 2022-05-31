@@ -86,6 +86,7 @@ If the user is not logged in, the user will get redirected to the login page, pe
 
 The routes which has `@login_required` decorator, you can use the `current_user` object inside the function.
 This `current_user` represents the user from the database and provides access all the attributes of that user with dot notation. For example, `current_user.email`, `current_user.password`, and `current_user.name`, and` current_user.id` will return the actual values stored in the database for the logged-in user.
+
 ----
 
 # Conclusion
