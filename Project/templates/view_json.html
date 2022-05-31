@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <table id="data" class="table table-hover table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for data in json_data %}
+        <tr>
+          <td scope="row">{{ data.id }}</td>
+          <td>{{ data.title }}</td>
+          <td>{{ data.body }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

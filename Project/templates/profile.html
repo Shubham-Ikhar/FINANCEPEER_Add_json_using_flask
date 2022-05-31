@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }}! <i class="bi bi-emoji-sunglasses-fill"></i>
+</h1>
+</br>
+<i class="bi bi-arrow-right"></i> <a href="{{ url_for('main.get_json') }}"> Click here </a> to add Json into Database.
+</br>
+<i class="bi bi-arrow-right"></i> <a href="{{ url_for('main.show_json') }}">Click here </a> to get all Json Data from Database.
+{% endblock %}
